@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\FinalGame\FinalGame\obj\Debug\FinalGame.csprojAssemblyReference.cache
+C:\Users\User\source\repos\FinalGame\FinalGame\obj\Debug\FinalGame.GameWindow.resources
+C:\Users\User\source\repos\FinalGame\FinalGame\obj\Debug\FinalGame.Menu.resources
+C:\Users\User\source\repos\FinalGame\FinalGame\obj\Debug\FinalGame.Properties.Resources.resources
+C:\Users\User\source\repos\FinalGame\FinalGame\obj\Debug\FinalGame.csproj.GenerateResource.cache
+C:\Users\User\source\repos\FinalGame\FinalGame\bin\Debug\FinalGame.exe.config
+C:\Users\User\source\repos\FinalGame\FinalGame\bin\Debug\FinalGame.exe
+C:\Users\User\source\repos\FinalGame\FinalGame\bin\Debug\FinalGame.pdb
+C:\Users\User\source\repos\FinalGame\FinalGame\obj\Debug\FinalGame.exe
+C:\Users\User\source\repos\FinalGame\FinalGame\obj\Debug\FinalGame.pdb

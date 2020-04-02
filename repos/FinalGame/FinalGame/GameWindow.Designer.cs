@@ -43,17 +43,17 @@
             this.show_player_points = new System.Windows.Forms.Label();
             this.show_player_mana = new System.Windows.Forms.Label();
             this.event_box = new System.Windows.Forms.TextBox();
-            this.head_attack_botton = new System.Windows.Forms.Button();
-            this.be_like_potato_botton = new System.Windows.Forms.Button();
-            this.mockery_bottom = new System.Windows.Forms.Button();
-            this.back_buttom = new System.Windows.Forms.Button();
+            this.head_attack_button = new System.Windows.Forms.Button();
+            this.be_like_potato_button = new System.Windows.Forms.Button();
+            this.mockery_button = new System.Windows.Forms.Button();
+            this.back_button = new System.Windows.Forms.Button();
             this.potato_player_image = new System.Windows.Forms.PictureBox();
             this.headattack_player_sprite = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.act_botton = new System.Windows.Forms.Button();
+            this.act_button = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.enemy_hp_label = new System.Windows.Forms.Label();
             this.enemy_actpoints_label = new System.Windows.Forms.Label();
@@ -97,6 +97,7 @@
             this.watch_on_enemy_button.Text = "Взглянуть на врага";
             this.watch_on_enemy_button.UseVisualStyleBackColor = true;
             this.watch_on_enemy_button.Visible = false;
+            this.watch_on_enemy_button.Click += new System.EventHandler(this.watch_on_enemy_button_Click);
             // 
             // player_hp_label
             // 
@@ -108,7 +109,6 @@
             this.player_hp_label.Size = new System.Drawing.Size(115, 20);
             this.player_hp_label.TabIndex = 4;
             this.player_hp_label.Text = "Здоровье ♥";
-            this.player_hp_label.Click += new System.EventHandler(this.label2_Click);
             // 
             // player_actpoints_label
             // 
@@ -131,7 +131,6 @@
             this.player_mana_label.Size = new System.Drawing.Size(53, 20);
             this.player_mana_label.TabIndex = 6;
             this.player_mana_label.Text = "Мана";
-            this.player_mana_label.Click += new System.EventHandler(this.label4_Click);
             // 
             // inventory_button
             // 
@@ -161,7 +160,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // static_player_image
             // 
@@ -174,7 +172,6 @@
             this.static_player_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.static_player_image.TabIndex = 10;
             this.static_player_image.TabStop = false;
-            this.static_player_image.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // show_player_hp
             // 
@@ -186,7 +183,6 @@
             this.show_player_hp.Size = new System.Drawing.Size(29, 20);
             this.show_player_hp.TabIndex = 11;
             this.show_player_hp.Text = "hp";
-            this.show_player_hp.Click += new System.EventHandler(this.label5_Click);
             // 
             // show_player_points
             // 
@@ -224,53 +220,52 @@
             this.event_box.Size = new System.Drawing.Size(470, 121);
             this.event_box.TabIndex = 14;
             this.event_box.Text = "БОЙ НАЧАЛСЯ!";
-            this.event_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // head_attack_botton
+            // head_attack_button
             // 
-            this.head_attack_botton.Location = new System.Drawing.Point(158, 172);
-            this.head_attack_botton.Name = "head_attack_botton";
-            this.head_attack_botton.Size = new System.Drawing.Size(125, 40);
-            this.head_attack_botton.TabIndex = 15;
-            this.head_attack_botton.Text = "Атака головой";
-            this.head_attack_botton.UseVisualStyleBackColor = true;
-            this.head_attack_botton.Visible = false;
-            this.head_attack_botton.Click += new System.EventHandler(this.head_attack_botton_Click);
+            this.head_attack_button.Location = new System.Drawing.Point(158, 172);
+            this.head_attack_button.Name = "head_attack_button";
+            this.head_attack_button.Size = new System.Drawing.Size(125, 40);
+            this.head_attack_button.TabIndex = 15;
+            this.head_attack_button.Text = "Атака головой";
+            this.head_attack_button.UseVisualStyleBackColor = true;
+            this.head_attack_button.Visible = false;
+            this.head_attack_button.Click += new System.EventHandler(this.head_attack_button_Click);
             // 
-            // be_like_potato_botton
+            // be_like_potato_button
             // 
-            this.be_like_potato_botton.Location = new System.Drawing.Point(158, 218);
-            this.be_like_potato_botton.Name = "be_like_potato_botton";
-            this.be_like_potato_botton.Size = new System.Drawing.Size(125, 40);
-            this.be_like_potato_botton.TabIndex = 16;
-            this.be_like_potato_botton.Text = "Прикинуться картошкой";
-            this.be_like_potato_botton.UseVisualStyleBackColor = true;
-            this.be_like_potato_botton.Visible = false;
-            this.be_like_potato_botton.Click += new System.EventHandler(this.be_like_potato_botton_Click);
+            this.be_like_potato_button.Location = new System.Drawing.Point(158, 218);
+            this.be_like_potato_button.Name = "be_like_potato_button";
+            this.be_like_potato_button.Size = new System.Drawing.Size(125, 40);
+            this.be_like_potato_button.TabIndex = 16;
+            this.be_like_potato_button.Text = "Прикинуться картошкой";
+            this.be_like_potato_button.UseVisualStyleBackColor = true;
+            this.be_like_potato_button.Visible = false;
+            this.be_like_potato_button.Click += new System.EventHandler(this.be_like_potato_button_Click);
             // 
-            // mockery_bottom
+            // mockery_button
             // 
-            this.mockery_bottom.Location = new System.Drawing.Point(158, 262);
-            this.mockery_bottom.Name = "mockery_bottom";
-            this.mockery_bottom.Size = new System.Drawing.Size(125, 40);
-            this.mockery_bottom.TabIndex = 17;
-            this.mockery_bottom.Text = "Насмешка";
-            this.mockery_bottom.UseVisualStyleBackColor = true;
-            this.mockery_bottom.Visible = false;
-            this.mockery_bottom.Click += new System.EventHandler(this.mockery_bottom_Click);
+            this.mockery_button.Location = new System.Drawing.Point(158, 262);
+            this.mockery_button.Name = "mockery_button";
+            this.mockery_button.Size = new System.Drawing.Size(125, 40);
+            this.mockery_button.TabIndex = 17;
+            this.mockery_button.Text = "Насмешка";
+            this.mockery_button.UseVisualStyleBackColor = true;
+            this.mockery_button.Visible = false;
+            this.mockery_button.Click += new System.EventHandler(this.mockery_button_Click);
             // 
-            // back_buttom
+            // back_button
             // 
-            this.back_buttom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.back_buttom.Location = new System.Drawing.Point(158, 126);
-            this.back_buttom.Name = "back_buttom";
-            this.back_buttom.Size = new System.Drawing.Size(125, 40);
-            this.back_buttom.TabIndex = 18;
-            this.back_buttom.Text = "<<назад";
-            this.back_buttom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.back_buttom.UseVisualStyleBackColor = true;
-            this.back_buttom.Visible = false;
-            this.back_buttom.Click += new System.EventHandler(this.back_buttom_Click);
+            this.back_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.back_button.Location = new System.Drawing.Point(158, 126);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(125, 40);
+            this.back_button.TabIndex = 18;
+            this.back_button.Text = "<<назад";
+            this.back_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Visible = false;
+            this.back_button.Click += new System.EventHandler(this.back_buttom_Click);
             // 
             // potato_player_image
             // 
@@ -282,7 +277,6 @@
             this.potato_player_image.TabIndex = 19;
             this.potato_player_image.TabStop = false;
             this.potato_player_image.Visible = false;
-            this.potato_player_image.Click += new System.EventHandler(this.potato_player_image_Click);
             // 
             // headattack_player_sprite
             // 
@@ -294,7 +288,6 @@
             this.headattack_player_sprite.TabIndex = 20;
             this.headattack_player_sprite.TabStop = false;
             this.headattack_player_sprite.Visible = false;
-            this.headattack_player_sprite.Click += new System.EventHandler(this.headattack_player_sprite_Click);
             // 
             // textBox2
             // 
@@ -329,15 +322,15 @@
             this.textBox4.Size = new System.Drawing.Size(273, 121);
             this.textBox4.TabIndex = 24;
             // 
-            // act_botton
+            // act_button
             // 
-            this.act_botton.Location = new System.Drawing.Point(29, 172);
-            this.act_botton.Name = "act_botton";
-            this.act_botton.Size = new System.Drawing.Size(125, 40);
-            this.act_botton.TabIndex = 25;
-            this.act_botton.Text = "Действия";
-            this.act_botton.UseVisualStyleBackColor = true;
-            this.act_botton.Click += new System.EventHandler(this.act_Click);
+            this.act_button.Location = new System.Drawing.Point(29, 172);
+            this.act_button.Name = "act_button";
+            this.act_button.Size = new System.Drawing.Size(125, 40);
+            this.act_button.TabIndex = 25;
+            this.act_button.Text = "Действия";
+            this.act_button.UseVisualStyleBackColor = true;
+            this.act_button.Click += new System.EventHandler(this.act_Click);
             // 
             // textBox1
             // 
@@ -349,7 +342,6 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(460, 297);
             this.textBox1.TabIndex = 21;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // enemy_hp_label
             // 
@@ -429,9 +421,9 @@
             this.Controls.Add(this.enemy_mana_label);
             this.Controls.Add(this.enemy_actpoints_label);
             this.Controls.Add(this.enemy_hp_label);
-            this.Controls.Add(this.act_botton);
-            this.Controls.Add(this.back_buttom);
-            this.Controls.Add(this.mockery_bottom);
+            this.Controls.Add(this.act_button);
+            this.Controls.Add(this.back_button);
+            this.Controls.Add(this.mockery_button);
             this.Controls.Add(this.show_player_mana);
             this.Controls.Add(this.show_player_points);
             this.Controls.Add(this.show_player_hp);
@@ -445,18 +437,17 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.event_box);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.be_like_potato_botton);
-            this.Controls.Add(this.head_attack_botton);
-            this.Controls.Add(this.watch_on_enemy_button);
-            this.Controls.Add(this.mana_button);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.static_player_image);
             this.Controls.Add(this.headattack_player_sprite);
             this.Controls.Add(this.potato_player_image);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.be_like_potato_button);
+            this.Controls.Add(this.mana_button);
+            this.Controls.Add(this.head_attack_button);
+            this.Controls.Add(this.watch_on_enemy_button);
+            this.Controls.Add(this.textBox3);
             this.Name = "GameWindow";
             this.Text = "GameWindow";
-            this.Load += new System.EventHandler(this.GameWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.static_player_image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.potato_player_image)).EndInit();
@@ -482,17 +473,17 @@
         private System.Windows.Forms.Label show_player_points;
         private System.Windows.Forms.Label show_player_mana;
         private System.Windows.Forms.TextBox event_box;
-        private System.Windows.Forms.Button head_attack_botton;
-        private System.Windows.Forms.Button be_like_potato_botton;
-        private System.Windows.Forms.Button mockery_bottom;
-        private System.Windows.Forms.Button back_buttom;
+        private System.Windows.Forms.Button head_attack_button;
+        private System.Windows.Forms.Button be_like_potato_button;
+        private System.Windows.Forms.Button mockery_button;
+        private System.Windows.Forms.Button back_button;
         private System.Windows.Forms.PictureBox potato_player_image;
         private System.Windows.Forms.PictureBox headattack_player_sprite;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button act_botton;
+        private System.Windows.Forms.Button act_button;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label enemy_hp_label;
         private System.Windows.Forms.Label enemy_actpoints_label;

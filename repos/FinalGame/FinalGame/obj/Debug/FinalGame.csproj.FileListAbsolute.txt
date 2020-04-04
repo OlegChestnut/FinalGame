@@ -18,3 +18,4 @@ C:\Users\User\source\FinalGame\repos\FinalGame\FinalGame\obj\Debug\FinalGame.Pro
 C:\Users\User\source\FinalGame\repos\FinalGame\FinalGame\obj\Debug\FinalGame.csproj.GenerateResource.cache
 C:\Users\User\source\FinalGame\repos\FinalGame\FinalGame\obj\Debug\FinalGame.exe
 C:\Users\User\source\FinalGame\repos\FinalGame\FinalGame\obj\Debug\FinalGame.pdb
+C:\Users\User\source\FinalGame\repos\FinalGame\FinalGame\obj\Debug\FinalGame.Settings.resources

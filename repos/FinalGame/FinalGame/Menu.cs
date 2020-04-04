@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace FinalGame
 {
+
     public partial class Menu : Form
     {
-        public Menu()
+        bool cheat_mode=false;
+        public Menu(bool cheats)
         {
             InitializeComponent();
+            cheat_mode = cheats;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            GameWindow f = new GameWindow();
+            GameWindow f = new GameWindow(cheat_mode);
             this.Hide();
             f.ShowDialog();
             this.Close();
@@ -36,6 +39,11 @@ namespace FinalGame
             this.Hide();
             f.ShowDialog();
             this.Close();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

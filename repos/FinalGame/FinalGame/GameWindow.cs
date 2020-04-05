@@ -14,7 +14,7 @@ namespace FinalGame
 {
     public partial class GameWindow : Form
     {
-        bool cheat_mode = false;
+        bool cheat_mode = false;//переменная для чит режима
         int enemy_action_points = 3, enemy_mana = 0, enemy_hp = 15, damage_for_enemy = 0;//параметры врага
         int enemy_damage_modifier = 0;//переменная модификатора урона на враге, используется при пробитии брони
         int player_action_points = 3, player_hp = 15, player_mana = 0, damage_for_player = 0;//параметры игрока
@@ -28,6 +28,30 @@ namespace FinalGame
             show_enemy_hp.Text = enemy_hp.ToString();
             show_enemy_actpoints.Text = enemy_action_points.ToString();
             show_enemy_mana.Text = enemy_mana.ToString();
+            if (player_effect_mana_weakness)
+            {
+                player_show_mana_effect.Visible = true;
+            }
+            else
+            {
+                player_show_mana_effect.Visible = false;
+            }
+            if (player_damage_modifier!=0)
+            {
+                player_show_hp_effect.Visible = true;
+            }
+            else
+            {
+                player_show_hp_effect.Visible = false;
+            }
+            if (enemy_damage_modifier != 0)
+            {
+                enemy_show_hp_effect.Visible = true;
+            }
+            else
+            {
+                enemy_show_hp_effect.Visible = false;
+            }
         }
         int end_of_battle(int player_hp, int enemy_hp)
         {
@@ -98,6 +122,11 @@ namespace FinalGame
                 cheat_plus_actpoints.Visible = true;
                 cheat_minus_actpoints.Visible = true;
             }
+            //всплывающие подсказки \/
+            ToolTip t = new ToolTip();
+            t.SetToolTip(player_show_mana_effect, "Получение маны ослабло");
+            t.SetToolTip(player_show_hp_effect, "Входящий урон уменьшен на 2");
+            t.SetToolTip(enemy_show_hp_effect, "Входящий урон увеличен на 2");
         }
         async private void end_of_turn_button_Click(object sender, EventArgs e)
         {
@@ -338,7 +367,7 @@ namespace FinalGame
                     enemy_damage_modifier = 2;
                     player_mana -= 3;
                     --player_action_points;
-                    event_box.Text = ("Вы насмехаетесь над тем как враг выглядит,\r\nкажется он негодует." +
+                    event_box.Text = ("Вы насмехаетесь над тем как враг выглядит,\r\nкажется он негодует.\r\nЗАЩИТА ВРАГА ОСЛАБЛА" +
                         "\r\nЗдоровье врага -"+damage_for_enemy);
                     potato_player_image.Visible = false;
                     mockery_player_image.Visible = true;

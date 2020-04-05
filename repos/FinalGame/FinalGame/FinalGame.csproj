@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cave_location_room1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cave_location_room1.Designer.cs">
+      <DependentUpon>cave_location_room1.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="cave_location_room1.resx">
+      <DependentUpon>cave_location_room1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameWindow.resx">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,16 +132,28 @@
     <None Include="Resources\sprite_player_mana.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sprite_player_mana1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\menu_background_sprite.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\caves_background_sprite.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sprite_player_mana2.png" />
+    <None Include="Resources\caves_background_sprite1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprite_step_caves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprite_icon_caves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprite_icon_caves512x512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprite_icon_flower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprite_icon_cave_entrance.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

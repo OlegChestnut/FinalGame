@@ -33,5 +33,10 @@ namespace FinalGame
             f.ShowDialog();
             this.Close();
         }
+
+        private void Settings_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

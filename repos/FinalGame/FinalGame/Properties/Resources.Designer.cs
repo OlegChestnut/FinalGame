@@ -63,6 +63,16 @@ namespace FinalGame.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap caves_background_sprite {
+            get {
+                object obj = ResourceManager.GetObject("caves_background_sprite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu_background_sprite {
             get {
                 object obj = ResourceManager.GetObject("menu_background_sprite", resourceCulture);
@@ -96,6 +106,46 @@ namespace FinalGame.Properties {
         internal static System.Drawing.Bitmap sprite_enemy_eroser_statick {
             get {
                 object obj = ResourceManager.GetObject("sprite_enemy_eroser_statick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sprite_icon_cave_entrance {
+            get {
+                object obj = ResourceManager.GetObject("sprite_icon_cave_entrance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sprite_icon_caves {
+            get {
+                object obj = ResourceManager.GetObject("sprite_icon_caves", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sprite_icon_caves512x512 {
+            get {
+                object obj = ResourceManager.GetObject("sprite_icon_caves512x512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sprite_icon_flower {
+            get {
+                object obj = ResourceManager.GetObject("sprite_icon_flower", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +196,16 @@ namespace FinalGame.Properties {
         internal static System.Drawing.Bitmap sprite_player_statick {
             get {
                 object obj = ResourceManager.GetObject("sprite_player_statick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sprite_step_caves {
+            get {
+                object obj = ResourceManager.GetObject("sprite_step_caves", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

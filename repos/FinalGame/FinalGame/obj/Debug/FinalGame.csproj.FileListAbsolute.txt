@@ -19,3 +19,4 @@ C:\Users\User\source\FinalGame\repos\FinalGame\FinalGame\obj\Debug\FinalGame.csp
 C:\Users\User\source\FinalGame\repos\FinalGame\FinalGame\obj\Debug\FinalGame.exe
 C:\Users\User\source\FinalGame\repos\FinalGame\FinalGame\obj\Debug\FinalGame.pdb
 C:\Users\User\source\FinalGame\repos\FinalGame\FinalGame\obj\Debug\FinalGame.Settings.resources
+C:\Users\User\source\FinalGame\repos\FinalGame\FinalGame\obj\Debug\FinalGame.cave_location_room1.resources

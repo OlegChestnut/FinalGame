@@ -18,6 +18,12 @@ namespace FinalGame
         {
             InitializeComponent();
             cheat_mode = cheats;
+            if (cheats)
+            {
+                start_game_button.ForeColor = Color.FromArgb(255, 255, 255, 0);
+                settings_button.ForeColor = Color.FromArgb(255, 255, 255, 0);
+                exit_button.ForeColor = Color.FromArgb(255, 255, 255, 0);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

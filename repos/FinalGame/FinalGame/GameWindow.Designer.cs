@@ -72,6 +72,9 @@
             this.enemy_mana2_image = new System.Windows.Forms.PictureBox();
             this.enemy_mana1_image = new System.Windows.Forms.PictureBox();
             this.mana_player_image = new System.Windows.Forms.PictureBox();
+            this.player_show_hp_effect = new System.Windows.Forms.Label();
+            this.player_show_mana_effect = new System.Windows.Forms.Label();
+            this.enemy_show_hp_effect = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.enemy_static_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.static_player_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.head_attack_player_image)).BeginInit();
@@ -152,9 +155,9 @@
             this.player_mana_label.ForeColor = System.Drawing.Color.LightCyan;
             this.player_mana_label.Location = new System.Drawing.Point(27, 83);
             this.player_mana_label.Name = "player_mana_label";
-            this.player_mana_label.Size = new System.Drawing.Size(53, 20);
+            this.player_mana_label.Size = new System.Drawing.Size(64, 20);
             this.player_mana_label.TabIndex = 6;
-            this.player_mana_label.Text = "Мана";
+            this.player_mana_label.Text = "Мана◈";
             // 
             // inventory_button
             // 
@@ -330,9 +333,9 @@
             this.enemy_mana_label.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.enemy_mana_label.Location = new System.Drawing.Point(506, 401);
             this.enemy_mana_label.Name = "enemy_mana_label";
-            this.enemy_mana_label.Size = new System.Drawing.Size(53, 20);
+            this.enemy_mana_label.Size = new System.Drawing.Size(64, 20);
             this.enemy_mana_label.TabIndex = 28;
-            this.enemy_mana_label.Text = "Мана";
+            this.enemy_mana_label.Text = "Мана◈";
             // 
             // show_enemy_hp
             // 
@@ -607,14 +610,53 @@
             this.mana_player_image.TabStop = false;
             this.mana_player_image.Visible = false;
             // 
+            // player_show_hp_effect
+            // 
+            this.player_show_hp_effect.AutoSize = true;
+            this.player_show_hp_effect.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.player_show_hp_effect.ForeColor = System.Drawing.Color.IndianRed;
+            this.player_show_hp_effect.Location = new System.Drawing.Point(226, 39);
+            this.player_show_hp_effect.Name = "player_show_hp_effect";
+            this.player_show_hp_effect.Size = new System.Drawing.Size(33, 25);
+            this.player_show_hp_effect.TabIndex = 44;
+            this.player_show_hp_effect.Text = "!!!";
+            this.player_show_hp_effect.Visible = false;
+            // 
+            // player_show_mana_effect
+            // 
+            this.player_show_mana_effect.AutoSize = true;
+            this.player_show_mana_effect.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.player_show_mana_effect.ForeColor = System.Drawing.Color.LightCyan;
+            this.player_show_mana_effect.Location = new System.Drawing.Point(226, 79);
+            this.player_show_mana_effect.Name = "player_show_mana_effect";
+            this.player_show_mana_effect.Size = new System.Drawing.Size(33, 25);
+            this.player_show_mana_effect.TabIndex = 45;
+            this.player_show_mana_effect.Text = "!!!";
+            this.player_show_mana_effect.Visible = false;
+            // 
+            // enemy_show_hp_effect
+            // 
+            this.enemy_show_hp_effect.AutoSize = true;
+            this.enemy_show_hp_effect.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.enemy_show_hp_effect.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.enemy_show_hp_effect.Location = new System.Drawing.Point(717, 357);
+            this.enemy_show_hp_effect.Name = "enemy_show_hp_effect";
+            this.enemy_show_hp_effect.Size = new System.Drawing.Size(33, 25);
+            this.enemy_show_hp_effect.TabIndex = 46;
+            this.enemy_show_hp_effect.Text = "!!!";
+            this.enemy_show_hp_effect.Visible = false;
+            // 
             // GameWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::FinalGame.Properties.Resources.caves_background_sprite;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.enemy_show_hp_effect);
+            this.Controls.Add(this.player_show_mana_effect);
+            this.Controls.Add(this.player_show_hp_effect);
             this.Controls.Add(this.enemy_static_image);
             this.Controls.Add(this.enemy_mana1_image);
             this.Controls.Add(this.enemy_mana2_image);
@@ -718,5 +760,8 @@
         private System.Windows.Forms.PictureBox enemy_mana2_image;
         private System.Windows.Forms.PictureBox enemy_mana1_image;
         private System.Windows.Forms.PictureBox mana_player_image;
+        private System.Windows.Forms.Label player_show_hp_effect;
+        private System.Windows.Forms.Label player_show_mana_effect;
+        private System.Windows.Forms.Label enemy_show_hp_effect;
     }
 }

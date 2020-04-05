@@ -80,6 +80,7 @@
             this.Controls.Add(this.show_text);
             this.Name = "Settings";
             this.Text = "settings";
+            this.Load += new System.EventHandler(this.Settings_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
